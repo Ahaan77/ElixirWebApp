@@ -141,6 +141,7 @@ urlpatterns = [
 #          s_views.crossword, name="crossword"),
     path('s_home/<int:pk>/batch/<int:pk1>/program/<int:pk2>/module/<int:pk3>/level/<int:pk4>/resume_builder/',
          s_views.e2e_modules, name="e2e_modules"),
+    
 
 
 
@@ -166,7 +167,15 @@ urlpatterns = [
          s_views.test_submit, name="test_submit"),
 
 
-    path('error/', views.error, name="error")
+    path('error/', views.error, name="error"),
+    path('LifeSkills/', views.Mi, name="Lifeskills" ),
+    path('Out/', views.Out, name="Out" ),
+    path('LT/', views.Listen, name="LT" ),
+    path('Lscore/', views.LScore, name="Lscore" ),
+    path('LHome/', views.LHome, name="LHome" ),
+     path('Mview/', views.Module_view_SK, name="Mview" ),
+     path('Mview1/', views.Module_view_LS, name="Mview1" ),
+     path('Mhome/', views.Mhome, name="Mhome" ),
 
 
 
@@ -175,3 +184,4 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += static(settings.MEDIA_URL2, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.MEDIA_URL4, document_root=settings.MEDIA_ROOT)
+
